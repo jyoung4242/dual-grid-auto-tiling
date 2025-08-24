@@ -34,14 +34,14 @@ const game = new Engine({
 });
 
 const worldMap = new TileMap({
-  columns: 10,
-  rows: 10,
+  columns: 25,
+  rows: 25,
   tileWidth: 16,
   tileHeight: 16,
 });
 const meshMap = new TileMap({
-  columns: 11,
-  rows: 11,
+  columns: 26,
+  rows: 26,
   tileWidth: 16,
   tileHeight: 16,
 });
@@ -55,8 +55,8 @@ await game.start(loader);
 game.add(worldMap);
 game.add(meshMap);
 
-game.currentScene.camera.pos = vec(16 * 5, 16 * 5);
-game.currentScene.camera.zoom = 2.25;
+game.currentScene.camera.pos = vec(16 * 12.5, 16 * 12.5);
+game.currentScene.camera.zoom = 1.2;
 let isDragging = false;
 let lastTile: Tile | null = null;
 let activeButton: PointerButton | null = null;
